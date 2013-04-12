@@ -1,0 +1,14 @@
+<project name="HelloWorld" basedir=".">
+    <description>
+        simple example build file
+    </description>
+  
+
+<target name="test1" unless="prop1">
+  	<echo message="invoking test1..." />
+		</target>
+<target name="test2" unless="prop2">
+		<echo message="invoking test2..." />
+		</target>
+
+</project>
