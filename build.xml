@@ -1,10 +1,12 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5" DefaultTargets="test1,test2">
-   
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5" DefaultTargets="test1">
+    <PropertyGroup>
+      <OutputDir>output</OutputDir>
+    </PropertyGroup>
+    <ItemGroup>
+      <MyReleaseFiles Include="."/>
+    </ItemGroup>
     <Target Name="test1">
-        <Echo Message="invoking test1..." />
-    </Target>
-    <Target Name="test2">
-        <Echo Message="invoking test2..." />
+        <Copy SourceFiles="@(MyReleaseFiles)" DestinationFolder="$(OutputDir)"/>
     </Target>
 
 </Project>
