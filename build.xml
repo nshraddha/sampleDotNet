@@ -4,10 +4,10 @@
     </description>
   
 
-<target name="test1" unless="prop1">
+<target name="test1">
   	<echo message="invoking test1..." />
 		</target>
-<target name="test2" unless="prop2">
+<target name="test2">
 		<echo message="invoking test2..." />
 		</target>
 
