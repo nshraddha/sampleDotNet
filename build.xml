@@ -1,14 +1,10 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5" DefaultTargets="test1,test2">
-    <Description>
-        simple example build file
-    </Description>
-  
-
-<Target name="test1">
-  <echo message="invoking test1..." />
-</Target>
-<Target name="test2">
-  <echo message="invoking test2..." />
-</Target>
+   
+    <Target name="test1">
+        <echo message="invoking test1..." />
+    </Target>
+    <Target name="test2">
+        <echo message="invoking test2..." />
+    </Target>
 
 </Project>
