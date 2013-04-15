@@ -8,5 +8,4 @@
     <Target Name="test1">
         <Copy SourceFiles="@(MyReleaseFiles)" DestinationFolder="$(OutputDir)"/>
     </Target>
-
 </Project>
