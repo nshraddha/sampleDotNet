@@ -2,9 +2,11 @@
     <PropertyGroup>
       <OutputDir>output</OutputDir>
     </PropertyGroup>
+    
     <ItemGroup>
       <MyReleaseFiles Include="helloworld.aspx"/>
     </ItemGroup>
+    
     <Target Name="test1">
         <Copy SourceFiles="@(MyReleaseFiles)" DestinationFolder="$(OutputDir)"/>
     </Target>
